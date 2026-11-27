@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎨 Drawing Application</h1>
+        <p>Create your own drawings!</p>
+
+        <div class="toolbar">
+
+            <label>Select Shape:</label>
+            <select id="shape">
+                <option value="line">Line</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+            </select>
+
+            <label>Drawing Color:</label>
+            <input type="color" id="color" value="#000000">
+
+            <label>Line Width:</label>
+            <input type="range" id="width" min="1" max="20" value="3">
+            <span id="widthValue">3</span>
+
+            <button id="erase">Erase</button>
+            <button id="clear">Clear Canvas</button>
+
+        </div>
+
+        <canvas id="drawingCanvas" width="800" height="450"></canvas>
+
+        <p class="footer">Draw • Create • Enjoy ❤️</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
